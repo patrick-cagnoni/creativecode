@@ -6,7 +6,7 @@ Esse projeto faz buscas na API do github e dispõe em um SPA feito em React.
 
 ### 1) Clone e instale as dependências
 
-- git clone git@github.com:patrick-cagnoni/creativecode.git
+- git clone https://github.com/patrick-cagnoni/creativecode.git
 - `cd creativecode`
 - `npm install` ou `yarn install` para instalar as dependências
 
