@@ -14,7 +14,7 @@ const Login = () => {
 
   function login() {
     sessionStorage.setItem('token', token);
-    getUser()(userDispatch, generalDispatch);
+    getUser(true)(userDispatch, generalDispatch);
   }
 
   return (

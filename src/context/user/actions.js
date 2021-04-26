@@ -17,7 +17,10 @@ const setEvents = (events) => ({
   payload: events,
 });
 
-export const getUser = () => (userDispatch, generalDispatch) => {
+export const getUser = (redirect = false) => (
+  userDispatch,
+  generalDispatch
+) => {
   generalDispatch(setLoading(true));
   api
     .getUser()
@@ -56,6 +59,7 @@ export const getUser = () => (userDispatch, generalDispatch) => {
       };
       userDispatch(setUser(user));
       generalDispatch(setLoading(false));
+      if (redirect) generalDispatch(setRedirect('/'));
     });
 };
 
